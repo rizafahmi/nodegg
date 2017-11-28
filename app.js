@@ -9,7 +9,6 @@ app.get('/', (req, res) => {
 
 app.get('/api/:nopol', (req, res) => {
   const { nopol } = req.params
-
   res.json({
     number: extractNumber(nopol)
   })
